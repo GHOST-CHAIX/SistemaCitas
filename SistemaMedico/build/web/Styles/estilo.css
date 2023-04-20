@@ -300,3 +300,9 @@ footer {
     text-align: center;
     z-index: 999;
 }
+
+@media (max-width:700px){
+    header{
+        display:flex;
+    }
+}

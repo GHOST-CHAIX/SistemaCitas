@@ -37,10 +37,17 @@ body {
     width: 800px    ;
     background-color: white;
     margin-top: 2px;
+    
 }
 
 .logo{
    margin-top: 25px ;
+   transition:  0.5s;
+   object-fit: cover;
+}
+
+.logo:hover{
+    transform: scale(1.4);
 }
 
 .doctor {
@@ -299,4 +306,10 @@ footer {
     right: 0;
     text-align: center;
     z-index: 999;
+}
+
+@media (max-width:700px){
+    header{
+        display:flex;
+    }
 }
