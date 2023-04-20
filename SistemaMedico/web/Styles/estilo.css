@@ -39,11 +39,20 @@ body {
     margin-top: 2px;
 }
 
+.logo{
+   margin-top: 25px ;
+}
+
 .doctor {
 
 margin-left: 100px;
 margin-top: 100px;
 
+}
+
+.botones1{
+
+    margin-left: 80px;
 }
 
 
@@ -86,7 +95,17 @@ button {
     letter-spacing: 1px;
     text-transform: uppercase;
     transition: transform 80ms ease-in;
+    margin-top: 30px;
 }
+
+button:hover {
+
+    background-color: #06786346;
+    color: #fff;
+    border-color: #fff;
+    border-width: 2px;
+}
+
 
 button:active {
     transform: scale(0.95);
@@ -122,6 +141,17 @@ input {
 
 .container {
     background-color: #006980;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+            0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+.container2 {
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
             0 10px 10px rgba(0,0,0,0.22);

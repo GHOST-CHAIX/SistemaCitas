@@ -1,4 +1,3 @@
-
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
@@ -11,8 +10,8 @@ import jakarta.servlet.http.HttpServletResponse;
  *
  * @author GHOSTKILLER
  */
-@WebServlet(urlPatterns = {"/Registro"})
-public class Registro extends HttpServlet {
+@WebServlet(urlPatterns = {"/Inicio"})
+public class Inicio extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -28,26 +27,27 @@ public class Registro extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try ( PrintWriter out = response.getWriter()) {
             
-            String nam, correo, contraseña;
+            String email, contraseña;
             int rfc;
             
-            nam = request.getParameter("name");
-            correo = request.getParameter("email");
+            email = request.getParameter("email");
             contraseña = request.getParameter("password");
             rfc = Integer.parseInt(request.getParameter("rfc"));
-            
             
             
             
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Registro</title>");            
+            out.println("<title></title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet Registro at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet Inicio at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
+        
+        
+        
         }
     }
 

@@ -62,10 +62,10 @@ body {
     padding: 280px;
     margin-top: 18px;
     border-radius: 20px;
-    width: 1400px;
+    width: 96%;
     margin-left: 40px;
 
-}
+}   
 
 h1 {
     font-weight: bold;
@@ -109,6 +109,23 @@ button {
     
     
 }
+button:hover {
+
+    background-color: #FFf;
+    color: #006980;
+    border: #006980;
+    border-width: 5px;
+}
+
+.volver:hover {
+
+    background-color: #067863;
+    color: #fff;
+    border-color: #fff;
+    border-width: 2px;
+}
+
+
 
 button:active {
     transform: scale(0.75);
